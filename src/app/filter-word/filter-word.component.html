@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="searchTerm"/>
+<ul>
+    <li *ngFor="let p of ppl | search:searchTerm">
+        {{p}}
+        </li>
+</ul>
+

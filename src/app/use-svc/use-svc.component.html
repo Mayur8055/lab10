@@ -1,0 +1,20 @@
+<p>use-svc works!</p>
+<ul>
+    <li *ngFor="let n of PlugFb()">
+        {{n}}
+    </li>
+</ul>
+
+<hr/>
+<h3>Directly accessing the injected service</h3>
+{{svcObj.showFbNotifications()}}
+<hr>
+<ul>
+    <li *ngFor="let m of PlugTwitter()">
+        {{m}}
+    </li>
+</ul>
+
+<hr/>
+<h3>Directly accessing the injected service</h3>
+{{svcObj.showtweet()}}
